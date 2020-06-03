@@ -62,4 +62,8 @@ module.exports.routes = {
   'POST  /api/v1/entrance/update-password-and-login':    { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
 
+
+  //**Tipo de Vehiculo */
+  'GET /api/v1/tipo/:id?': { action: 'tipo-vehiculo/find' },
+  'POST /api/v1/tipo/create': { action: 'tipo-vehiculo/create' },
 };
