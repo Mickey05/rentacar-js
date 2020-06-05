@@ -1,4 +1,4 @@
-# backend
+# rentcar-server
 
 a [Sails v1](https://sailsjs.com) application
 
@@ -14,12 +14,10 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
-This app was originally generated on Sun May 24 2020 19:24:11 GMT-0400 (Atlantic Standard Time) using Sails v1.1.0.
+This app was originally generated on Wed May 27 2020 22:25:02 GMT-0400 (Bolivia Time) using Sails v1.2.4.
 
-<!-- Internally, Sails used [`sails-generate@1.16.6`](https://github.com/balderdashy/sails-generate/tree/v1.16.6/lib/core-generators/new). -->
+<!-- Internally, Sails used [`sails-generate@1.16.13`](https://github.com/balderdashy/sails-generate/tree/v1.16.13/lib/core-generators/new). -->
 
-
-This project's boilerplate is based on an expanded seed app provided by the [Sails core team](https://sailsjs.com/about) to make it easier for you to build on top of ready-made features like authentication, enrollment, email verification, and billing.  For more information, [drop us a line](https://sailsjs.com/support).
 
 
 <!--

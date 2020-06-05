@@ -10,60 +10,58 @@
 
 module.exports.routes = {
 
-  //  ╦ ╦╔═╗╔╗ ╔═╗╔═╗╔═╗╔═╗╔═╗
-  //  ║║║║╣ ╠╩╗╠═╝╠═╣║ ╦║╣ ╚═╗
-  //  ╚╩╝╚═╝╚═╝╩  ╩ ╩╚═╝╚═╝╚═╝
-  'GET /':                   { action: 'view-homepage-or-redirect' },
-  'GET /welcome/:unused?':   { action: 'dashboard/view-welcome' },
+  /***************************************************************************
+  *                                                                          *
+  * Make the view located at `views/homepage.ejs` your home page.            *
+  *                                                                          *
+  * (Alternatively, remove this and add an `index.html` file in your         *
+  * `assets` directory)                                                      *
+  *                                                                          *
+  ***************************************************************************/
 
-  'GET /faq':                { view:   'pages/faq' },
-  'GET /legal/terms':        { view:   'pages/legal/terms' },
-  'GET /legal/privacy':      { view:   'pages/legal/privacy' },
-  'GET /contact':            { view:   'pages/contact' },
-
-  'GET /signup':             { action: 'entrance/view-signup' },
-  'GET /email/confirm':      { action: 'entrance/confirm-email' },
-  'GET /email/confirmed':    { view:   'pages/entrance/confirmed-email' },
-
-  'GET /login':              { action: 'entrance/view-login' },
-  'GET /password/forgot':    { action: 'entrance/view-forgot-password' },
-  'GET /password/new':       { action: 'entrance/view-new-password' },
-
-  'GET /account':            { action: 'account/view-account-overview' },
-  'GET /account/password':   { action: 'account/view-edit-password' },
-  'GET /account/profile':    { action: 'account/view-edit-profile' },
+  '/': { view: 'pages/homepage' },
 
 
-  //  ╔╦╗╦╔═╗╔═╗  ╦═╗╔═╗╔╦╗╦╦═╗╔═╗╔═╗╔╦╗╔═╗   ┬   ╔╦╗╔═╗╦ ╦╔╗╔╦  ╔═╗╔═╗╔╦╗╔═╗
-  //  ║║║║╚═╗║    ╠╦╝║╣  ║║║╠╦╝║╣ ║   ║ ╚═╗  ┌┼─   ║║║ ║║║║║║║║  ║ ║╠═╣ ║║╚═╗
-  //  ╩ ╩╩╚═╝╚═╝  ╩╚═╚═╝═╩╝╩╩╚═╚═╝╚═╝ ╩ ╚═╝  └┘   ═╩╝╚═╝╚╩╝╝╚╝╩═╝╚═╝╩ ╩═╩╝╚═╝
-  '/terms':                   '/legal/terms',
-  '/logout':                  '/api/v1/account/logout',
-
-
-  //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
-  //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
-  //  ╚╩╝╚═╝╚═╝╩ ╩╚═╝╚═╝╩ ╩╚═╝
-  // …
-
-
-  //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
-  //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
-  //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
-  // Note that, in this app, these API endpoints may be accessed using the `Cloud.*()` methods
-  // from the Parasails library, or by using those method names as the `action` in <ajax-form>.
-  '/api/v1/account/logout':                           { action: 'account/logout' },
-  'PUT   /api/v1/account/update-password':            { action: 'account/update-password' },
-  'PUT   /api/v1/account/update-profile':             { action: 'account/update-profile' },
-  'PUT   /api/v1/account/update-billing-card':        { action: 'account/update-billing-card' },
-  'PUT   /api/v1/entrance/login':                        { action: 'entrance/login' },
-  'POST  /api/v1/entrance/signup':                       { action: 'entrance/signup' },
-  'POST  /api/v1/entrance/send-password-recovery-email': { action: 'entrance/send-password-recovery-email' },
-  'POST  /api/v1/entrance/update-password-and-login':    { action: 'entrance/update-password-and-login' },
-  'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
-
-
+  
   //**Tipo de Vehiculo */
-  'GET /api/v1/tipo/:id?': { action: 'tipo-vehiculo/find' },
-  'POST /api/v1/tipo/create': { action: 'tipo-vehiculo/create' },
+  'GET /v1/tipo/:id?': 'v-1/tipo-vehiculo/find',
+  'POST /v1/tipo/create': 'v-1/tipo-vehiculo/create',
+  'PUT /v1/tipo/update/:id': 'v-1/tipo-vehiculo/update',
+  'DELETE /v1/tipo/remove/:id': 'v-1/tipo-vehiculo/remove',
+
+  
+  //**Marcas de Vehiculos */
+  'GET /v1/marca/:id?': 'v-1/marca/find',
+  'POST /v1/marca/create': 'v-1/marca/create',
+  'PUT /v1/marca/update/:id': 'v-1/marca/update',
+  'DELETE /v1/marca/remove/:id': 'v-1/marca/remove',
+
+  
+  //**Modelos de Vehiculos */
+  'GET /v1/modelo/:id?': 'v-1/modelo/find',
+  'POST /v1/modelo/create': 'v-1/modelo/create',
+  'PUT /v1/modelo/update/:id': 'v-1/modelo/update',
+  'DELETE /v1/modelo/remove/:id': 'v-1/modelo/remove',
+
+  
+  //**Tipo de Combustible */
+  'GET /v1/combustible/:id?': 'v-1/combustible/find',
+  'POST /v1/combustible/create': 'v-1/combustible/create',
+  'PUT /v1/combustible/update/:id': 'v-1/combustible/update',
+  'DELETE /v1/combustible/remove/:id': 'v-1/combustible/remove',
+
+
+
+  /***************************************************************************
+  *                                                                          *
+  * More custom routes here...                                               *
+  * (See https://sailsjs.com/config/routes for examples.)                    *
+  *                                                                          *
+  * If a request to a URL doesn't match any of the routes in this file, it   *
+  * is matched against "shadow routes" (e.g. blueprint routes).  If it does  *
+  * not match any of those, it is matched against static assets.             *
+  *                                                                          *
+  ***************************************************************************/
+
+
 };

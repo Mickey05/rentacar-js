@@ -7,7 +7,6 @@
 
 module.exports = {
 
-
   attributes: {
 
     tipo: {
@@ -22,6 +21,10 @@ module.exports = {
     estado: {
       type: 'string',
       required: true
+    },
+    vehiculo: {
+      collection: 'vehiculos',
+      via: 'tipo'
     },
   },
 };
