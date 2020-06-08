@@ -1,15 +1,19 @@
 module.exports = {
 
 
-  friendlyName: 'Remove',
+  friendlyName: 'Update',
 
 
-  description: 'Remove vehiculos.',
+  description: 'Update empleados.',
 
 
   inputs: {
     id: {
       type: 'string',
+      required: true
+    },
+    body: {
+      type: 'ref',
       required: true
     }
 
@@ -21,19 +25,18 @@ module.exports = {
   },
 
 
-  fn: async function ({ id }) {
-
+  fn: async function ({ id, body}) {
     try {
       if (id) {
-        var Vehiculo = await Vehiculos.findOne({ id });
-        if (!Vehiculo) {
+        var empleado = await Empleados.findOne({ id });
+        if (!empleado) {
           return this.res.notFound();
         }
-        var VehiculosRemove = await Vehiculos.destroyOne({ id });
-        if (VehiculosRemove) {
+        var empleadoUpdated = await Empleados.updateOne({ id }).set(body);
+        if (empleadoUpdated) {
           return this.res.status(200).send({
             status: 1,
-            body: null
+            body: empleadoUpdated
           })
         }
         return this.res.status(200).send({
@@ -48,5 +51,6 @@ module.exports = {
     }
 
   }
+
 
 };

@@ -50,6 +50,43 @@ module.exports.routes = {
   'PUT /v1/combustible/update/:id': 'v-1/combustible/update',
   'DELETE /v1/combustible/remove/:id': 'v-1/combustible/remove',
 
+  
+  //**Vehiculo */
+  'GET /v1/vehiculo/:id?': 'v-1/vehiculos/find',
+  'POST /v1/vehiculo/create': 'v-1/vehiculos/create',
+  'PUT /v1/vehiculo/update/:id': 'v-1/vehiculos/update',
+  'DELETE /v1/vehiculo/remove/:id': 'v-1/vehiculos/remove',
+  
+
+  //**Clientes */
+  'GET /v1/cliente/:id?': 'v-1/clientes/find',
+  'POST /v1/cliente/create': 'v-1/clientes/create',
+  'PUT /v1/cliente/update/:id': 'v-1/clientes/update',
+  'DELETE /v1/cliente/remove/:id': 'v-1/clientes/remove',
+
+  
+  //**Empleados */
+  'GET /v1/empleado/:id?': 'v-1/empleados/find',
+  'POST /v1/empleado/create': 'v-1/empleados/create',
+  'PUT /v1/empleado/update/:id': 'v-1/empleados/update',
+  'DELETE /v1/empleado/remove/:id': 'v-1/empleados/remove',
+  
+
+  //**Inspeccion */
+  'GET /v1/inspeccion/:id?': 'v-1/inspeccion/find',
+  'POST /v1/inspeccion/create': 'v-1/inspeccion/create',
+  'PUT /v1/inspeccion/update/:id': 'v-1/inspeccion/update',
+  'DELETE /v1/inspeccion/remove/:id': 'v-1/inspeccion/remove',
+
+
+  //**Renta y Devolucion */
+  'GET /v1/rentadevolucion/:id?': 'v-1/renta-devolucion/find',
+  'POST /v1/rentadevolucion/create': 'v-1/renta-devolucion/create',
+  'PUT /v1/rentadevolucion/update/:id': 'v-1/renta-devolucion/update',
+  'DELETE /v1/rentadevolucion/remove/:id': 'v-1/renta-devolucion/remove',
+
+
+
 
 
   /***************************************************************************

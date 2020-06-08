@@ -4,8 +4,7 @@ module.exports = {
   friendlyName: 'Remove',
 
 
-  description: 'Remove vehiculos.',
-
+  description: 'Remove clientes.',
 
   inputs: {
     id: {
@@ -25,12 +24,12 @@ module.exports = {
 
     try {
       if (id) {
-        var Vehiculo = await Vehiculos.findOne({ id });
-        if (!Vehiculo) {
+        var cliente = await Clientes.findOne({ id });
+        if (!cliente) {
           return this.res.notFound();
         }
-        var VehiculosRemove = await Vehiculos.destroyOne({ id });
-        if (VehiculosRemove) {
+        var clienteRemove = await Clientes.destroyOne({ id });
+        if (clienteRemove) {
           return this.res.status(200).send({
             status: 1,
             body: null

@@ -1,5 +1,5 @@
 /**
- * Vehiculos.js
+ * RentaDevolucion.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -8,51 +8,47 @@
 module.exports = {
 
   attributes: {
-    descripcion: {
-      type: 'string',
-      required: true
-    },
-    chasisNum: {
-      type: 'string',
-      required: true
-    },
-    motorNum: {
-      type: 'string',
-      required: true
-    },
-    placaNum: {
+    NoRenta: {
       type: 'string',
       required: true,
       unique: true
     },
-    tipo: {
-      model: 'tipoVehiculo',
+    empleado: {
+      model: 'empleados',
       required: true
     },
-    marca: {
-      model: 'marcas',
+    vehiculo: {
+      model: 'vehiculos',
       required: true
     },
-    modelo: {
-      model: 'modelos',
+    cliente: {
+      model: 'clientes',
       required: true
     },
-    combustible: {
-      model: 'combustible',
+    fechaRenta: {
+      type: 'string',
+      required: true
+    },
+    fechaDevolucion: {
+      type: 'string',
+      required: true
+    },
+    montoXdia: {
+      type: 'string',
+      required: true
+    },
+    cantidadDias: {
+      type: 'number',
+      required: true
+    },
+    comentario: {
+      type: 'string',
       required: true
     },
     estado: {
       type: 'string',
       required: true
-    },
-    inspeccion: {
-      collection: 'inspeccion',
-      via: 'vehiculo'
-    },
-    rentaDevolucion: {
-      collection: 'rentaDevolucion',
-      via: 'vehiculo'
-    }    
+    }
   },
 
 };

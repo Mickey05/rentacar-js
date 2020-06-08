@@ -1,5 +1,5 @@
 /**
- * Vehiculos.js
+ * Clientes.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -8,37 +8,25 @@
 module.exports = {
 
   attributes: {
-    descripcion: {
+    nombre: {
       type: 'string',
       required: true
     },
-    chasisNum: {
-      type: 'string',
-      required: true
-    },
-    motorNum: {
-      type: 'string',
-      required: true
-    },
-    placaNum: {
+    cedula: {
       type: 'string',
       required: true,
       unique: true
     },
-    tipo: {
-      model: 'tipoVehiculo',
+    tarjeta: {
+      type: 'string',
       required: true
     },
-    marca: {
-      model: 'marcas',
+    limiteCredito: {
+      type: 'string',
       required: true
     },
-    modelo: {
-      model: 'modelos',
-      required: true
-    },
-    combustible: {
-      model: 'combustible',
+    tipoPersona: {
+      type: 'string',
       required: true
     },
     estado: {
@@ -47,13 +35,12 @@ module.exports = {
     },
     inspeccion: {
       collection: 'inspeccion',
-      via: 'vehiculo'
+      via: 'cliente'
     },
     rentaDevolucion: {
       collection: 'rentaDevolucion',
-      via: 'vehiculo'
-    }    
+      via: 'cliente'
+    }     
   },
 
 };
-

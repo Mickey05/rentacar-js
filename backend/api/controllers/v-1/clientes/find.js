@@ -4,7 +4,8 @@ module.exports = {
   friendlyName: 'Find',
 
 
-  description: 'Find vehiculos.',
+  description: 'Find clientes.',
+
 
   inputs: {
     id: {
@@ -22,8 +23,8 @@ module.exports = {
 
     try {
       if (id) {
-        let vehiculo = await Vehiculos.findOne({ id }).populate('tipo').populate('marca').populate('modelo').populate('combustible');
-        if (!vehiculo) {
+        let cliente = await Clientes.findOne({ id });
+        if (!cliente) {
           return this.res.status(200).send({
             status: 0,
             body: null
@@ -31,19 +32,20 @@ module.exports = {
         }
         return this.res.status(200).send({
           status: 1,
-          body: vehiculo
+          body: cliente
         })
       }
-      let vehiculo = await Vehiculos.find().populate('tipo').populate('marca').populate('modelo').populate('combustible');
+      let cliente = await Clientes.find();
       return this.res.status(200).send({
         status: 2,
-        body: vehiculo
+        body: cliente
       })
     } catch (error) {
-      console.log(error);
+      sails.error(error);
       return this.res.serverError(error);
     }
 
   }
+
 
 };
