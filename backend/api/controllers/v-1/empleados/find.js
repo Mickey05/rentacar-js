@@ -8,10 +8,10 @@ module.exports = {
 
 
   inputs: {
-    id: {
+    cedula: {
       type: 'string',
       required: false
-    }
+    },
   },
 
 
@@ -19,11 +19,11 @@ module.exports = {
 
   },
 
-  fn: async function ({ id }) {
+  fn: async function ({ cedula }) {
 
     try {
-      if (id) {
-        let empleado = await Empleados.findOne({ id });
+      if (cedula) {
+        let empleado = await Empleados.findOne({ cedula });
         if (!empleado) {
           return this.res.status(200).send({
             status: 0,

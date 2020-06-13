@@ -8,10 +8,10 @@ module.exports = {
 
 
   inputs: {
-    id: {
+    NoRenta: {
       type: 'string',
       required: false
-    }
+    },
   },
 
 
@@ -19,11 +19,11 @@ module.exports = {
 
   },
 
-  fn: async function ({ id }) {
+  fn: async function ({ NoRenta }) {
 
     try {
-      if (id) {
-        let rentaDevolucion = await RentaDevolucion.findOne({ id }).populate('vehiculo').populate('cliente').populate('empleado');
+      if (NoRenta) {
+        let rentaDevolucion = await RentaDevolucion.findOne({ NoRenta }).populate('vehiculo').populate('cliente').populate('empleado');
         if (!rentaDevolucion) {
           return this.res.status(200).send({
             status: 0,
