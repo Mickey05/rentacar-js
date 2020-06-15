@@ -67,6 +67,7 @@ module.exports.routes = {
   
   //**Empleados */
   'GET /v1/empleado/:cedula?': 'v-1/empleados/find',
+  'GET /v1/login/:cedula?/:clave?': 'v-1/empleados/find',
   'POST /v1/empleado/create': 'v-1/empleados/create',
   'PUT /v1/empleado/update/:id': 'v-1/empleados/update',
   'DELETE /v1/empleado/remove/:id': 'v-1/empleados/remove',
@@ -81,6 +82,7 @@ module.exports.routes = {
 
   //**Renta y Devolucion */
   'GET /v1/rentadevolucion/:NoRenta?': 'v-1/renta-devolucion/find',
+  'GET /v1/devolucion/:vehiculo?/:estado?': 'v-1/renta-devolucion/find',
   'POST /v1/rentadevolucion/create': 'v-1/renta-devolucion/create',
   'PUT /v1/rentadevolucion/update/:id': 'v-1/renta-devolucion/update',
   'DELETE /v1/rentadevolucion/remove/:id': 'v-1/renta-devolucion/remove',

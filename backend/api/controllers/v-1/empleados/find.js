@@ -12,6 +12,10 @@ module.exports = {
       type: 'string',
       required: false
     },
+    clave: {
+      type: 'string',
+      required: false
+    },
   },
 
 
@@ -19,11 +23,24 @@ module.exports = {
 
   },
 
-  fn: async function ({ cedula }) {
+  fn: async function ({ cedula, clave }) {
 
     try {
       if (cedula) {
         let empleado = await Empleados.findOne({ cedula });
+        if (!empleado) {
+          return this.res.status(200).send({
+            status: 0,
+            body: null
+          })
+        }
+        return this.res.status(200).send({
+          status: 1,
+          body: empleado
+        })
+      }
+      if (cedula && clave) {
+        let empleado = await Empleados.findOne({ cedula: cedula, clave: clave });
         if (!empleado) {
           return this.res.status(200).send({
             status: 0,

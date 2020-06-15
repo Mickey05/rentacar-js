@@ -60,7 +60,10 @@ module.exports = {
     NoRenta, empleado, vehiculo, cliente, fechaRenta, fechaDevolucion, montoXdia, cantidadDias, comentario, estado
   }) {
     try {
-      var rentaDevolucion = await RentaDevolucion.findOne({ NoRenta });
+      var rentaDevolucion = await RentaDevolucion.findOne({ 
+        NoRenta: NoRenta,
+        cliente: cliente,
+        estado: estado});
       if (rentaDevolucion) {
         return this.res.status(200).send({
           status: 0,

@@ -67,7 +67,8 @@ module.exports = {
     try {
       var inspeccion = await Inspeccion.findOne({ 
         vehiculo: vehiculo,
-        cliente: cliente
+        cliente: cliente,
+        estado: estado
        });
       if (inspeccion) {
         return this.res.status(200).send({

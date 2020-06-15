@@ -16,6 +16,10 @@ module.exports = {
       type: 'string',
       required: true
     },
+    clave: {
+      type: 'string',
+      required: true
+    },
     tanda: {
       type: 'string',
       required: true
@@ -42,7 +46,7 @@ module.exports = {
 
 
   fn: async function ({
-    nombre, cedula, tanda, comision, fechaIngreso, estado
+    nombre, cedula, clave, tanda, comision, fechaIngreso, estado
   }) {
     try {
       var empleado = await Empleados.findOne({ cedula });
@@ -54,7 +58,7 @@ module.exports = {
         });
       }
       var newEmpleado = await Empleados.create({
-        nombre, cedula, tanda, comision, fechaIngreso, estado
+        nombre, cedula, clave, tanda, comision, fechaIngreso, estado
       }).fetch();
       if (newEmpleado) {
         return this.res.status(200).send({
