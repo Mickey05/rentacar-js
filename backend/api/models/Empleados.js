@@ -17,6 +17,10 @@ module.exports = {
       required: true,
       unique: true
     },
+    clave: {
+      type: 'string',
+      required: true
+    },
     tanda: {
       type: 'string',
       required: true

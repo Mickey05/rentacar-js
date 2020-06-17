@@ -8,7 +8,15 @@ module.exports = {
 
 
   inputs: {
-    id: {
+    NoRenta: {
+      type: 'string',
+      required: false
+    },
+    vehiculo: {
+      type: 'string',
+      required: false
+    },
+    estado: {
       type: 'string',
       required: false
     }
@@ -19,11 +27,26 @@ module.exports = {
 
   },
 
-  fn: async function ({ id }) {
+  fn: async function ({ NoRenta, vehiculo, estado }) {
 
     try {
-      if (id) {
-        let rentaDevolucion = await RentaDevolucion.findOne({ id }).populate('vehiculo').populate('cliente').populate('empleado');
+      if (vehiculo && estado) {        
+        let rentaDevolucion = await RentaDevolucion.findOne({ 
+          vehiculo: vehiculo,
+          estado: estado }).populate('vehiculo').populate('cliente').populate('empleado');
+        if (!rentaDevolucion) {
+          return this.res.status(200).send({
+            status: 0,
+            body: null
+          })
+        }
+        return this.res.status(200).send({
+          status: 1,
+          body: rentaDevolucion
+        })
+      }
+      if (NoRenta) {
+        let rentaDevolucion = await RentaDevolucion.findOne({ NoRenta }).populate('vehiculo').populate('cliente').populate('empleado');
         if (!rentaDevolucion) {
           return this.res.status(200).send({
             status: 0,

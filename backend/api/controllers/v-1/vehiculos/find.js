@@ -7,10 +7,10 @@ module.exports = {
   description: 'Find vehiculos.',
 
   inputs: {
-    id: {
+    placaNum: {
       type: 'string',
       required: false
-    }
+    },
   },
 
 
@@ -18,11 +18,11 @@ module.exports = {
 
   },
 
-  fn: async function ({ id }) {
+  fn: async function ({ placaNum }) {
 
     try {
-      if (id) {
-        let vehiculo = await Vehiculos.findOne({ id }).populate('tipo').populate('marca').populate('modelo').populate('combustible');
+      if (placaNum) {
+        let vehiculo = await Vehiculos.findOne({ placaNum }).populate('tipo').populate('marca').populate('modelo').populate('combustible');
         if (!vehiculo) {
           return this.res.status(200).send({
             status: 0,
