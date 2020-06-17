@@ -1,157 +1,199 @@
->We’re working on Vuestic UI component library, which lets you easily customize components to your own design.<br>
->Get early access and receive support from the core team! 😎<br>
->[Sign up now](https://vuestic-ui.epicmax.co)
-
-<br>
-<br>
+# [Vue Material Dashboard](https://demos.creative-tim.com/vue-material-dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Material%20Dashboard,%20a%20free%20Material%20Admin%20Template%20%E2%9D%A4%EF%B8%8F%20https%3A//bit.ly/2Nh5aVy%20%20%23vue%20%23material%20%23design%20%23developers%20%23freebie%20%20via%20%40CreativeTim)
 
 
-<p align="center">
-  English | <a href="./README.zh-CN.md"> 简体中文 </a> | <a href="./README.ja-JP.md"> 日本語 </a>
-</p>
+ ![version](https://img.shields.io/badge/version-1.4.0-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vue-material-dashboard.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vue-material-dashboard.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
-<h1 align="center"> Vuestic Admin </h1>
 
-<p align="center">
-  Free and beautiful Vue.js admin template with 44+ custom UI components.</br>
-  Developed by  <a href="https://epicmax.co">Epicmax</a>.
-  Designed by <a href="https://www.xxsavitski.com">Vasili Savitski</a>
-</p>
+![Product Gif](https://s3.amazonaws.com/creativetim_bucket/github/gif/vue-material-dashboard.gif)
 
-<p align="center">
-  <a href="https://vuestic.epicmax.co"> Demo </a> | <a href="https://vuestic.epicmax.co/admin/dashboard?theme=corporate"> New white theme demo </a> | <a href="https://github.com/epicmaxco/vuestic-admin/wiki"> Documentation </a>
-</p>
-<p align="center">
-  <a href="https://vuestic.epicmax.co" target="_blank">
-    <img src="https://i.imgur.com/N9AeaSc.jpg" align="center" width="888px"/>
-  </a>
-</p>
+Vue Material Dashboard is a beautiful resource built over [Vue Material](https://vuematerial.io/) and [Vuejs](https://vuejs.org/v2/guide/). It will help you get started developing dashboards in no time. Vue Material Dashboard is the official Vuejs version of the Original Material Dashboard. Using the Dashboard is pretty simple but requires basic knowledge of Javascript, [Vuejs](https://vuejs.org/v2/guide/) and [Vue Router](https://router.vuejs.org/en/).
 
-<p align="center">
-  <a href="https://circleci.com/gh/epicmaxco/vuestic-admin">
-    <img src="https://img.shields.io/circleci/build/github/epicmaxco/vuestic-admin/master" alt="Circleci">
-  </a>
-</p>
+We have created it thinking about things you actually need in a dashboard. Vue Material Dashboard contains handpicked and optimised Vuejs plugins. Everything is designed to fit with one another. As you will be able to see, the dashboard you can access on Creative Tim is a customisation of this product.
 
-<h2>
-  <a href="https://vuestic.epicmax.co/admin/dashboard?theme=corporate" target="_blank">
-    New white theme demo
-  </a>
-</h2>
+Let us know what you think and what we can improve below. And good luck with development!
 
-<p align="center">
-  <a href="https://vuestic.epicmax.co/admin/dashboard?theme=corporate" target="_blank">
-    <img src="https://i.imgur.com/DnFcrjD.png" align="center" width="888px"/>
-  </a>
-</p>
 
-## Installation
+## Table of Contents
 
-First of all, make sure you have all prerequisites installed:
-- [Node.js](https://nodejs.org/en/) (>=8.9)
-- [npm](https://www.npmjs.com/get-npm) version 3+ (or [yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable) version 1.16+)  and [Git](https://git-scm.com/).
+* [Versions](#versions)
+* [Demo](#demo)
+* [Quick Start](#quick-start)
+* [Documentation](#documentation)
+* [File Structure](#file-structure)
+* [Browser Support](#browser-support)
+* [Resources](#resources)
+* [Reporting Issues](#reporting-issues)
+* [Technical Support or Questions](#technical-support-or-questions)
+* [Licensing](#licensing)
+* [Useful Links](#useful-links)
 
-After checking the prerequisites, follow these simple steps to install and use Vuestic Admin:
+
+
+## Versions
+
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit)[<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)
+
+
+| HTML | React  |
+| --- | ---  |
+| [![Material Dashboard  HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard)  | [![Material Dashboard  React](https://s3.amazonaws.com/creativetim_bucket/products/71/thumb/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react)
+
+| Vue | Angular  |
+| --- | ---  |
+| [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/thumb/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard Angular 2](https://s3.amazonaws.com/creativetim_bucket/products/53/thumb/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2)
+
+
+
+## Demo
+
+| Dashboard | User Profile | Tables | Maps | Notification |
+| --- | --- | --- | --- | --- |
+| [![Start page](src/assets/github/dashboard.png)](https://demos.creative-tim.com/vue-material-dashboard) | [![User profile page](src/assets/github/user_profile.png)](https://demos.creative-tim.com/vue-material-dashboard/#/user) | [![Tables page ](src/assets/github/tables.png)](https://demos.creative-tim.com/vue-material-dashboard/#/table) | [![Maps Page](src/assets/github/maps.png)](https://demos.creative-tim.com/vue-material-dashboard/#/maps) | [![Notification page](src/assets/github/notification.png)](https://demos.creative-tim.com/vue-material-dashboard/#/notifications)
+
+[View More](https://demos.creative-tim.com/vue-material-dashboard).
+
+
+## Quick start
+
+## :cloud: Build Setup
+
+### install dependencies
+`npm install`
+### serve with hot reload at localhost:8080
+`npm run dev`
+### build for production with minification
+`npm run build`
+
+- [Download from Github](https://github.com/creativetimofficial/vue-material-dashboard/archive/master.zip).
+- [Download from Creative Tim](https://www.creative-tim.com/product/vue-material-dashboard).
+- Clone the repo: `git clone https://github.com/creativetimofficial/vue-material-dashboard.git`.
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+## Documentation
+The documentation for the Vue Material Dashboard is hosted at our [website](https://demos.creative-tim.com/vue-material-dashboard/documentation).
+
+
+## File Structure
+Within the download you'll find the following directories and files:
 
 ```
-# clone the repo
-$ git clone https://github.com/epicmaxco/vuestic-admin.git myproject
-
-# go into app's directory and install dependencies:
-$ cd myproject
-
+vue-material-dashboard
+├── README.md
+├── babel.config.js
+├── package.json
+├── postcss.config.js
+├── public
+│   └── index.html
+└── src
+    ├── App.vue
+    ├── assets
+    │   ├── img
+    │   └── scss
+    │       ├── material-dashboard.scss
+    │       └── md
+    ├── components
+    │   ├── Cards
+    │   │   ├── ChartCard.vue
+    │   │   ├── NavTabsCard.vue
+    │   │   └── StatsCard.vue
+    │   ├── Dropdown.vue
+    │   ├── NotificationPlugin
+    │   │   ├── Notification.vue
+    │   │   ├── Notifications.vue
+    │   │   └── index.js
+    │   ├── SidebarPlugin
+    │   │   ├── SideBar.vue
+    │   │   ├── SidebarLink.vue
+    │   │   └── index.js
+    │   ├── Tables
+    │   │   ├── NavTabsTable.vue
+    │   │   ├── OrderedTable.vue
+    │   │   └── SimpleTable.vue
+    │   └── index.js
+    ├── globalComponents.js
+    ├── globalDirectives.js
+    ├── main.js
+    ├── material-dashboard.js
+    ├── pages
+    │   ├── Dashboard.vue
+    │   ├── Icons.vue
+    │   ├── Layout
+    │   │   ├── Content.vue
+    │   │   ├── ContentFooter.vue
+    │   │   ├── DashboardLayout.vue
+    │   │   ├── MobileMenu.vue
+    │   │   └── TopNavbar.vue
+    │   ├── Maps.vue
+    │   ├── Notifications.vue
+    │   ├── TableList.vue
+    │   ├── Typography.vue
+    │   ├── UpgradeToPRO.vue
+    │   ├── UserProfile
+    │   │   ├── EditProfileForm.vue
+    │   │   └── UserCard.vue
+    │   ├── UserProfile.vue
+    │   └── index.js
+    └── routes
+        └── routes.js
 ```
-
-Then, if you use npm:
-
-```
-$ npm install
-
-# serve with hot reload at localhost:8080 by default.
-$ npm run serve
-
-# build for production
-$ npm run build
-
-# build for production and view the bundle analyzer report.
-$ npm run build --report
-```
-
-If you use yarn:
-```
-$ yarn install
-
-# serve with hot reload at localhost:8080 by default.
-$ yarn serve
-
-# build for production
-$ yarn build
-
-# build for production and view the bundle analyzer report.
-$ yarn build --report
-```
-
-## Features
-[Responsive layout](https://vuestic.epicmax.co/#/admin/dashboard) |
-[charts (Chart.js)](https://vuestic.epicmax.co/#/admin/statistics/charts) |
-[progress bars](https://vuestic.epicmax.co/#/admin/statistics/progress-bars) |
-[forms](https://vuestic.epicmax.co/#/admin/forms/form-elements) |
-[selects](https://vuestic.epicmax.co/#/admin/forms/form-elements) |
-[date pickers](https://vuestic.epicmax.co/#/admin/forms/form-elements) |
-[checkboxes and radios](https://vuestic.epicmax.co/#/admin/forms/form-elements) |
-[static tables and data tables](https://vuestic.epicmax.co/#/admin/tables/data) |
-[medium editor](https://vuestic.epicmax.co/#/admin/forms/medium-editor) |
-[smooth typography](https://vuestic.epicmax.co/#/admin/ui/typography) |
-[buttons](https://vuestic.epicmax.co/#/admin/ui/buttons) |
-[collapses](https://vuestic.epicmax.co/#/admin/ui/collapses) |
-[color pickers](https://vuestic.epicmax.co/#/admin/ui/color-pickers) |
-[timelines](https://vuestic.epicmax.co/#/admin/ui/timelines) |
-[toasts](https://vuestic.epicmax.co/#/admin/ui/notifications) |
-[tooltips](https://vuestic.epicmax.co/#/admin/ui/popovers) |
-[popovers](https://vuestic.epicmax.co/#/admin/ui/popovers) |
-[icons](https://vuestic.epicmax.co/#/admin/ui/icons/) |
-[spinners](https://vuestic.epicmax.co/#/admin/ui/spinners) |
-[modals](https://vuestic.epicmax.co/#/admin/ui/modals) |
-[file upload](https://vuestic.epicmax.co/#/admin/ui/file-upload) |
-[chips](https://vuestic.epicmax.co/#/admin/ui/chips) |
-[trees](https://vuestic.epicmax.co/#/admin/ui/tree-view) |
-[cards](https://vuestic.epicmax.co/#/admin/ui/cards) |
-[ratings](https://vuestic.epicmax.co/#/admin/ui/rating) |
-[sliders](https://vuestic.epicmax.co/#/admin/ui/sliders) |
-[chat](https://vuestic.epicmax.co/#/admin/ui/chatPage) |
-[maps (Google, Yandex, Leaflet, amMap)](https://vuestic.epicmax.co/#/admin/maps/google-maps) |
-[login/signup pages templates](https://vuestic.epicmax.co/#/auth/login) |
-[404 pages templates](https://vuestic.epicmax.co/#/admin/pages/404-pages) |
-[i18n](https://vuestic.epicmax.co/#/admin/dashboard)
 
 
 ## Browser Support
-Modern browsers and IE11
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera |
-| --- | --- | --- | --- | --- |
-| IE11, Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
+At present, we officially aim to support the last two versions of the following browsers:
+
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
 
-## Contributing
-Thanks for all your wonderful PRs, issues and ideas. You’re always welcome to [join](https://github.com/epicmaxco/vuestic-admin/blob/master/.github/CONTRIBUTING.md)!
+## Resources
+- Demo: <https://demos.creative-tim.com/vue-material-dashboard>
+- Download Page: <https://www.creative-tim.com/product/vue-material-dashboard>
+- Documentation: <https://demos.creative-tim.com/vue-material-dashboard/documentation>
+- License Agreement: <https://www.creative-tim.com/license>
+- Support: <https://www.creative-tim.com/contact-us>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/vue-material-dashboard/issues)
+## Reporting Issues
 
-[![](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/images/0)](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/links/0)[![](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/images/1)](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/links/1)[![](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/images/2)](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/links/2)[![](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/images/3)](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/links/3)[![](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/images/4)](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/links/4)[![](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/images/5)](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/links/5)[![](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/images/6)](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/links/6)[![](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/images/7)](https://sourcerer.io/fame/smartapant/epicmaxco/vuestic-admin/links/7)
+We use GitHub Issues as the official bug tracker for the Vue Material Dashboard. Here are some advices for our users that want to report an issue:
 
-## Awards
-<a href="https://flatlogic.com/templates/vuestic-vue-free-admin" target="_blank">
-    <img src="https://i.imgur.com/ZeQPZ3Q.png" align="center" width="150px"/>
-</a>
-<p>
-  By <a href="https://flatlogic.com/templates/vuestic-vue-free-admin" target="_blank">@flatlogic</a> marketplace
-</p>
+1. Make sure that you are using the latest version of the Vue Material Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
-## Can I hire you guys?
-Yes! Say hi: [hello@epicmax.co](mailto:hello@epicmax.co) </br>
-We will be happy to work with you! Other [work we’ve done](https://epicmax.co)
 
-## Follow us
-Stay up to date with the latest Vuestic news! Follow us on [Twitter](https://twitter.com/epicmaxco) or [Facebook](https://facebook.com/epicmaxco)
+## Technical Support or Questions
 
-## License
-[MIT](https://github.com/epicmaxco/vuestic-admin/blob/master/LICENSE) license.
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+
+
+
+## Licensing
+
+- Copyright 2018 Creative Tim (https://www.creative-tim.com/)
+
+- Licensed under MIT (https://github.com/creativetimofficial/vue-material-dashboard/blob/master/LICENSE.md)
+
+
+
+## Useful Links
+
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
+
+##### Social Media
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://www.instagram.com/CreativeTimOfficial>
