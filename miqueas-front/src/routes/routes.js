@@ -1,13 +1,12 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
-import UserProfile from "@/pages/UserProfile.vue";
-import TableList from "@/pages/TableList.vue";
+import RentRecieve from "@/pages/RentRecieve.vue";
+import Vehicles from "@/pages/Vehicles.vue";
 import Typography from "@/pages/Typography.vue";
 import Icons from "@/pages/Icons.vue";
 import Maps from "@/pages/Maps.vue";
 import Notifications from "@/pages/Notifications.vue";
-import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
 
 const routes = [
   {
@@ -21,14 +20,14 @@ const routes = [
         component: Dashboard
       },
       {
-        path: "user",
-        name: "User Profile",
-        component: UserProfile
+        path: "rent",
+        name: "Renta y Recepción",
+        component: RentRecieve
       },
       {
-        path: "table",
-        name: "Table List",
-        component: TableList
+        path: "vehicles",
+        name: "Vehículos",
+        component: Vehicles
       },
       {
         path: "typography",
@@ -52,11 +51,6 @@ const routes = [
         path: "notifications",
         name: "Notifications",
         component: Notifications
-      },
-      {
-        path: "upgrade",
-        name: "Upgrade to PRO",
-        component: UpgradeToPRO
       }
     ]
   }
